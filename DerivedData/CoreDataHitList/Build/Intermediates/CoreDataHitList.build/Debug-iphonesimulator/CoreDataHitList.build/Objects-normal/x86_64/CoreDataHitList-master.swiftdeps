@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
 options: "dc931ddaff6506b1399ca8966fada521"
-build_time: [513193202, 574778000]
+build_time: [513196505, 539372000]
 inputs:
-  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/CoreDataHitList/CoreDataHitList/ViewController.swift": [513193200, 0]
+  "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/CoreDataHitList/CoreDataHitList/ViewController.swift": [513196505, 0]
   "/Users/shahid/Desktop/Projects/Swift2/Raywenderlich/CoreDataHitList/CoreDataHitList/AppDelegate.swift": [513188780, 0]

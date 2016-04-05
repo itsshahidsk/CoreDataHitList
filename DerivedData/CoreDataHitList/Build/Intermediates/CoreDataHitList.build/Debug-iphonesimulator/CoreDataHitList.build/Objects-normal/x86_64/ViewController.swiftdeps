@@ -7,36 +7,40 @@ provides-member:
 - ["C15CoreDataHitList14ViewController", ""]
 - ["C15CoreDataHitList14ViewController", "savePerson"]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "tableView"
-- "viewDidLoad"
 - "savePerson"
-- "people"
+- "managedObjectContext"
+- "viewDidLoad"
 - "addName"
+- "tableView"
+- "tableView"
+- "tableView"
+- "people"
+- "didReceiveMemoryWarning"
 depends-top-level:
+- !private "print"
+- !private "UIAlertAction"
+- "AnyObject"
+- !private "AppDelegate"
 - "NSManagedObject"
 - "ViewController"
-- !private "UIAlertAction"
-- !private "AppDelegate"
 - "String"
-- "AnyObject"
-- "Int"
-- "UIViewController"
-- !private "BooleanLiteralType"
-- !private "NSError"
-- !private "UIApplication"
+- !private "UIAlertController"
 - "UITableViewCell"
 - "UITableViewDataSource"
-- !private "print"
-- "NSIndexPath"
-- !private "StringLiteralType"
+- "UIViewController"
+- !private "BooleanLiteralType"
+- "NSManagedObjectContext"
 - !private "NSEntityDescription"
-- !private "UIAlertController"
+- !private "UIApplication"
+- "Int"
+- !private "NSFetchRequest"
+- "NSIndexPath"
+- !private "NSError"
 - "UITableView"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "NSEntityDescription"]
+- !private ["Ps9AnyObject", "NSFetchRequest"]
 - ["Ps9AnyObject", "NSManagedObject"]
 - !private ["Ps9AnyObject", "UIAlertAction"]
 - !private ["Ps9AnyObject", "UIAlertController"]
@@ -49,8 +53,9 @@ depends-member:
 - !private ["Ps9AnyObject", "dequeueReusableCellWithIdentifier"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "entityForName"]
+- !private ["Ps9AnyObject", "executeFetchRequest"]
 - ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "managedObjectContext"]
+- ["Ps9AnyObject", "managedObjectContext"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - ["Ps9AnyObject", "people"]
 - !private ["Ps9AnyObject", "presentViewController"]
@@ -102,6 +107,7 @@ depends-member:
 - ["Ps11CVarArgType", "Distance"]
 - ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "NSEntityDescription"]
+- !private ["Ps11CVarArgType", "NSFetchRequest"]
 - ["Ps11CVarArgType", "NSManagedObject"]
 - !private ["Ps11CVarArgType", "UIAlertAction"]
 - !private ["Ps11CVarArgType", "UIAlertController"]
@@ -114,8 +120,9 @@ depends-member:
 - !private ["Ps11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - ["Ps11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["Ps11CVarArgType", "entityForName"]
+- !private ["Ps11CVarArgType", "executeFetchRequest"]
 - ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "managedObjectContext"]
+- ["Ps11CVarArgType", "managedObjectContext"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - ["Ps11CVarArgType", "people"]
 - !private ["Ps11CVarArgType", "presentViewController"]
@@ -153,7 +160,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Generator"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "NSEntityDescription"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
 - ["Ps28CustomDebugStringConvertible", "NSManagedObject"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
 - ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertAction"]
 - !private ["Ps28CustomDebugStringConvertible", "UIAlertController"]
@@ -169,9 +178,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "entityForName"]
+- !private ["Ps28CustomDebugStringConvertible", "executeFetchRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "first"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
+- ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps28CustomDebugStringConvertible", "people"]
 - !private ["Ps28CustomDebugStringConvertible", "presentViewController"]
@@ -199,6 +209,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "Index"]
 - ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "NSEntityDescription"]
+- !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
 - ["Ps23CustomStringConvertible", "NSManagedObject"]
 - ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIAlertAction"]
@@ -215,9 +226,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "entityForName"]
+- !private ["Ps23CustomStringConvertible", "executeFetchRequest"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "managedObjectContext"]
+- ["Ps23CustomStringConvertible", "managedObjectContext"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps23CustomStringConvertible", "people"]
 - !private ["Ps23CustomStringConvertible", "presentViewController"]
@@ -246,6 +258,7 @@ depends-member:
 - ["Ps9Equatable", "Distance"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "NSEntityDescription"]
+- !private ["Ps9Equatable", "NSFetchRequest"]
 - ["Ps9Equatable", "NSManagedObject"]
 - !private ["Ps9Equatable", "UIAlertAction"]
 - !private ["Ps9Equatable", "UIAlertController"]
@@ -258,8 +271,9 @@ depends-member:
 - !private ["Ps9Equatable", "dequeueReusableCellWithIdentifier"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "entityForName"]
+- !private ["Ps9Equatable", "executeFetchRequest"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "managedObjectContext"]
+- ["Ps9Equatable", "managedObjectContext"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - ["Ps9Equatable", "people"]
 - !private ["Ps9Equatable", "presentViewController"]
@@ -292,6 +306,7 @@ depends-member:
 - ["Ps8Hashable", "Distance"]
 - ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "NSEntityDescription"]
+- !private ["Ps8Hashable", "NSFetchRequest"]
 - ["Ps8Hashable", "NSManagedObject"]
 - !private ["Ps8Hashable", "UIAlertAction"]
 - !private ["Ps8Hashable", "UIAlertController"]
@@ -304,8 +319,9 @@ depends-member:
 - !private ["Ps8Hashable", "dequeueReusableCellWithIdentifier"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "entityForName"]
+- !private ["Ps8Hashable", "executeFetchRequest"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "managedObjectContext"]
+- ["Ps8Hashable", "managedObjectContext"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - ["Ps8Hashable", "people"]
 - !private ["Ps8Hashable", "presentViewController"]
@@ -381,6 +397,7 @@ depends-member:
 - ["Ps16MutableSliceable", "init"]
 - !private ["Ps16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "NSEntityDescription"]
+- !private ["PSo8NSCoding", "NSFetchRequest"]
 - ["PSo8NSCoding", "NSManagedObject"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
@@ -392,7 +409,9 @@ depends-member:
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "entityForName"]
+- !private ["PSo8NSCoding", "executeFetchRequest"]
 - ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "managedObjectContext"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "people"]
 - !private ["PSo8NSCoding", "presentViewController"]
@@ -418,6 +437,7 @@ depends-member:
 - !private ["CSo19NSEntityDescription", "entityForName"]
 - !private ["CSo7NSError", "userInfo"]
 - !private ["PSo26NSExtensionRequestHandling", "NSEntityDescription"]
+- !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
 - ["PSo26NSExtensionRequestHandling", "NSManagedObject"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
@@ -428,6 +448,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "addTextFieldWithConfigurationHandler"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "managedObjectContext"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "people"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
@@ -440,11 +461,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "entityForName"]
+- !private ["CSo14NSFetchRequest", "init"]
 - !private ["CSo11NSIndexPath", "row"]
+- !private ["PSo9NSLocking", "executeFetchRequest"]
 - !private ["PSo9NSLocking", "save"]
 - !private ["CSo15NSManagedObject", "init"]
 - !private ["CSo15NSManagedObject", "setValue"]
 - !private ["CSo15NSManagedObject", "valueForKey"]
+- !private ["CSo22NSManagedObjectContext", "executeFetchRequest"]
 - !private ["CSo22NSManagedObjectContext", "save"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
@@ -452,8 +476,10 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "NSEntityDescription"]
 - !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSFetchRequest"]
 - ["CSo8NSObject", "NSIndexPath"]
 - ["CSo8NSObject", "NSManagedObject"]
+- ["CSo8NSObject", "NSManagedObjectContext"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
@@ -467,8 +493,9 @@ depends-member:
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "entityForName"]
+- !private ["CSo8NSObject", "executeFetchRequest"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "managedObjectContext"]
+- ["CSo8NSObject", "managedObjectContext"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "people"]
 - !private ["CSo8NSObject", "presentViewController"]
@@ -490,6 +517,7 @@ depends-member:
 - !private ["CSo8NSObject", "valueForKey"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "NSEntityDescription"]
+- !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
 - ["PSo16NSObjectProtocol", "NSManagedObject"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
@@ -502,8 +530,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "entityForName"]
+- !private ["PSo16NSObjectProtocol", "executeFetchRequest"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "managedObjectContext"]
+- ["PSo16NSObjectProtocol", "managedObjectContext"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "people"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
@@ -525,11 +554,14 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "valueForKey"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["CSo24NSPersistentStoreRequest", "init"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "userInfo"]
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "init"]
 - ["Ps21RandomAccessIndexType", "Distance"]
@@ -588,6 +620,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "NSEntityDescription"]
+- !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
 - ["PSo21UIAppearanceContainer", "NSManagedObject"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
@@ -599,6 +632,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "managedObjectContext"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "people"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
@@ -618,6 +652,7 @@ depends-member:
 - !private ["CSo13UIApplication", "sharedApplication"]
 - !private ["PSo21UIApplicationDelegate", "managedObjectContext"]
 - !private ["PSo18UIContentContainer", "NSEntityDescription"]
+- !private ["PSo18UIContentContainer", "NSFetchRequest"]
 - ["PSo18UIContentContainer", "NSManagedObject"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
@@ -628,6 +663,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "addTextFieldWithConfigurationHandler"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "managedObjectContext"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "people"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
@@ -651,6 +687,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "NSEntityDescription"]
+- !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
 - ["PSo18UIFocusEnvironment", "NSManagedObject"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
@@ -662,6 +699,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "managedObjectContext"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "people"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
@@ -685,8 +723,10 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "NSEntityDescription"]
 - !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSFetchRequest"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - ["CSo11UIResponder", "NSManagedObject"]
+- ["CSo11UIResponder", "NSManagedObjectContext"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
@@ -700,7 +740,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "managedObjectContext"]
+- ["CSo11UIResponder", "managedObjectContext"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "people"]
 - !private ["CSo11UIResponder", "presentViewController"]
@@ -720,6 +760,7 @@ depends-member:
 - !private ["CSo12UIScrollView", "registerClass"]
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["PSo16UIStateRestoring", "NSEntityDescription"]
+- !private ["PSo16UIStateRestoring", "NSFetchRequest"]
 - ["PSo16UIStateRestoring", "NSManagedObject"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
@@ -730,6 +771,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "addTextFieldWithConfigurationHandler"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "managedObjectContext"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "people"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
@@ -746,11 +788,13 @@ depends-member:
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "textLabel"]
 - !private ["PSo21UITableViewDataSource", "NSEntityDescription"]
+- !private ["PSo21UITableViewDataSource", "NSFetchRequest"]
 - ["PSo21UITableViewDataSource", "NSManagedObject"]
 - !private ["PSo21UITableViewDataSource", "UIAlertAction"]
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UIApplication"]
 - !private ["PSo21UITableViewDataSource", "UITableViewCell"]
+- !private ["PSo21UITableViewDataSource", "managedObjectContext"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "people"]
 - !private ["PSo21UITableViewDataSource", "presentViewController"]
@@ -764,6 +808,7 @@ depends-member:
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "NSEntityDescription"]
+- !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
 - ["PSo18UITraitEnvironment", "NSManagedObject"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
@@ -775,6 +820,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "managedObjectContext"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "people"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
@@ -800,8 +846,10 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - !private ["CSo16UIViewController", "NSEntityDescription"]
 - !private ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSFetchRequest"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - ["CSo16UIViewController", "NSManagedObject"]
+- ["CSo16UIViewController", "NSManagedObjectContext"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
@@ -813,6 +861,7 @@ depends-member:
 - !private ["CSo16UIViewController", "addTextFieldWithConfigurationHandler"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "managedObjectContext"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "people"]
 - !private ["CSo16UIViewController", "presentViewController"]
@@ -836,8 +885,10 @@ depends-member:
 - ["C15CoreDataHitList14ViewController", "Int"]
 - !private ["C15CoreDataHitList14ViewController", "NSEntityDescription"]
 - !private ["C15CoreDataHitList14ViewController", "NSError"]
+- !private ["C15CoreDataHitList14ViewController", "NSFetchRequest"]
 - ["C15CoreDataHitList14ViewController", "NSIndexPath"]
 - ["C15CoreDataHitList14ViewController", "NSManagedObject"]
+- ["C15CoreDataHitList14ViewController", "NSManagedObjectContext"]
 - ["C15CoreDataHitList14ViewController", "String"]
 - !private ["C15CoreDataHitList14ViewController", "UIAlertAction"]
 - !private ["C15CoreDataHitList14ViewController", "UIAlertController"]
@@ -848,6 +899,7 @@ depends-member:
 - ["C15CoreDataHitList14ViewController", "deinit"]
 - ["C15CoreDataHitList14ViewController", "didReceiveMemoryWarning"]
 - ["C15CoreDataHitList14ViewController", "init"]
+- ["C15CoreDataHitList14ViewController", "managedObjectContext"]
 - ["C15CoreDataHitList14ViewController", "numberOfSectionsInTableView"]
 - ["C15CoreDataHitList14ViewController", "people"]
 - !private ["C15CoreDataHitList14ViewController", "presentViewController"]
@@ -904,6 +956,7 @@ depends-member:
 - ["Ps12_Reflectable", "Generator"]
 - ["Ps12_Reflectable", "Index"]
 - ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
 - ["Ps12_Reflectable", "SubSequence"]
 - ["Ps12_Reflectable", "_Element"]
 - !private ["Ps12_Reflectable", "append"]
@@ -961,6 +1014,7 @@ depends-nominal:
 - !private "CSo7NSError"
 - "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
+- !private "CSo14NSFetchRequest"
 - !private "CSo11NSIndexPath"
 - !private "PSo9NSLocking"
 - !private "CSo15NSManagedObject"
@@ -968,9 +1022,11 @@ depends-nominal:
 - !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "CSo24NSPersistentStoreRequest"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "Sq"
+- "Ps21NilLiteralConvertible"
+- "Sq"
 - !private "Ps16OutputStreamType"
 - "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
@@ -1046,4 +1102,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
-interface-hash: "873de3b8b1051be170588d138521a8cd"
+interface-hash: "6e1e0b603856db1a9e65f8dfea562115"

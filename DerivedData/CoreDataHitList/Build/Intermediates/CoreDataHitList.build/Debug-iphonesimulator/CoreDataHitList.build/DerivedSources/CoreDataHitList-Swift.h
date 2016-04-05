@@ -131,6 +131,7 @@ SWIFT_CLASS("_TtC15CoreDataHitList14ViewController")
 @interface ViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, copy) NSArray<NSManagedObject *> * _Nonnull people;
+@property (nonatomic, readonly, strong) NSManagedObjectContext * _Nullable managedObjectContext;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)addName:(id _Nonnull)sender;

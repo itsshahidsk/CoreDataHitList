@@ -31,9 +31,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "The List"
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        if let managedObjectContext = managedObjectContext {
+            let personFetchRequest = NSFetchRequest(entityName: "Person")
+            
+            do {
+                let results = try managedObjectContext.executeFetchRequest(personFetchRequest)
+                people = results as! [NSManagedObject]
+            }   catch let error as NSError {
+                print("Could not get items \(error)")
+            }
+        }
+        
     }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -87,6 +96,7 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController {
+    
     func  savePerson(withName name: String) {
         
         if let managedObjectContext = self.managedObjectContext {
